@@ -48,6 +48,8 @@
     <Compile Include="FileItem\Image.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FileItem\Resolution.cs" />
+    <Compile Include="Visitor\AbstractVisitor.cs" />
+    <Compile Include="Visitor\PrintVisitor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

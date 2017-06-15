@@ -1,9 +1,11 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Xml;
 using System.Xml.Serialization;
+using FileSystem.Visitor;
 
 namespace FileSystem.Directory
 {
@@ -28,6 +30,11 @@ namespace FileSystem.Directory
         public void Add(AbstractDirectory item)
         {
             ChildrenList.Add(item);
+        }
+
+        public override void accept(AbstractVisitor visitor)
+        {
+            visitor.visit(this);
         }
     }
 }

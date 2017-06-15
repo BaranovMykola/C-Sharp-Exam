@@ -4,6 +4,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 using FileSystem.Directory;
+using FileSystem.Visitor;
 
 namespace FileSystem.FileItem
 {
@@ -24,7 +25,7 @@ namespace FileSystem.FileItem
 
         const int AtributeCount = 4;
 
-        private readonly List<Atribute> AtributesOrder = new List<Atribute>()
+        public static readonly List<Atribute> AtributesOrder = new List<Atribute>()
         {
             Atribute.System,
             Atribute.Hidden,
@@ -81,16 +82,14 @@ namespace FileSystem.FileItem
             return $"Name: {Name}\tSize: {Size}\tAtributes: {atr}";
         }
 
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            throw new NotImplementedException();
-        }
-
         protected void Clear() => Size = 0;
 
         protected void Rename(string fileName) => Name = fileName;
 
-
+        public override void accept(AbstractVisitor visitor)
+        {
+            visitor.visit(this);
+        }
 
         #endregion
     }
