@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <File xsi:type="Image">
+    <Size>0</Size>
+    <Resolution>
+      <Height>0</Height>
+      <Width>0</Width>
+    </Resolution>
+    <Depth>0</Depth>
+    <Channels>0</Channels>
+    <Extension>Jpg</Extension>
+  </File>
+  <File xsi:type="Image">
+    <Size>0</Size>
+    <Resolution>
+      <Height>0</Height>
+      <Width>0</Width>
+    </Resolution>
+    <Depth>0</Depth>
+    <Channels>0</Channels>
+    <Extension>Jpg</Extension>
+  </File>
+  <File xsi:type="Document">
+    <Size>0</Size>
+    <Extension>Pdf</Extension>
+  </File>
+</ArrayOfFile>

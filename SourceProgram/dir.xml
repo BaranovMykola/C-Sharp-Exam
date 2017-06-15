@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<AbstractDirectory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Directory">
+  <Name>DIRECTORY_ROOT</Name>
+  <ChildrenList>
+    <AbstractDirectory xsi:type="Directory">
+      <Name>dir1</Name>
+      <ChildrenList>
+        <AbstractDirectory xsi:type="Image">
+          <Name>img1</Name>
+          <Size>22</Size>
+          <Atributes>
+            <Atribute>Archive</Atribute>
+            <Atribute>System</Atribute>
+          </Atributes>
+          <Resolution>
+            <Height>100</Height>
+            <Width>100</Width>
+          </Resolution>
+          <Depth>255</Depth>
+          <Channels>3</Channels>
+          <Extension>Gif</Extension>
+        </AbstractDirectory>
+        <AbstractDirectory xsi:type="Document">
+          <Name>doc1</Name>
+          <Size>2222</Size>
+          <Atributes>
+            <Atribute>Hidden</Atribute>
+            <Atribute>System</Atribute>
+            <Atribute>Archive</Atribute>
+          </Atributes>
+          <Data>.....data.....</Data>
+          <Extension>Docx</Extension>
+        </AbstractDirectory>
+      </ChildrenList>
+    </AbstractDirectory>
+  </ChildrenList>
+</AbstractDirectory>
