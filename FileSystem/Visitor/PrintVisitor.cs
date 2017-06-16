@@ -36,7 +36,6 @@ namespace FileSystem.Visitor
                 Console.WriteLine(dir);
             }
             Retreat(depth);
-            //--depth;
         }
 
         private void Retreat(int width)

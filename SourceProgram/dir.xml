@@ -1,37 +1,140 @@
 <?xml version="1.0"?>
-<AbstractDirectory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Directory">
-  <Name>DIRECTORY_ROOT</Name>
+<Directory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ROOT</Name>
   <ChildrenList>
     <AbstractDirectory xsi:type="Directory">
-      <Name>dir1</Name>
+      <Name>LEFT_DIR</Name>
       <ChildrenList>
-        <AbstractDirectory xsi:type="Image">
-          <Name>img1</Name>
-          <Size>22</Size>
+        <AbstractDirectory xsi:type="Document">
+          <Name>print</Name>
+          <Size>1814030384</Size>
           <Atributes>
-            <Atribute>Archive</Atribute>
             <Atribute>System</Atribute>
+            <Atribute>Hidden</Atribute>
+          </Atributes>
+          <Data>ach of the planned Web Application because there is too much dep</Data>
+          <Extension>Txt</Extension>
+        </AbstractDirectory>
+      </ChildrenList>
+    </AbstractDirectory>
+    <AbstractDirectory xsi:type="Directory">
+      <Name>RIGHT_DIR</Name>
+      <ChildrenList>
+        <AbstractDirectory xsi:type="Document">
+          <Name>is</Name>
+          <Size>98038700</Size>
+          <Atributes>
+            <Atribute>System</Atribute>
+            <Atribute>Hidden</Atribute>
+            <Atribute>Archive</Atribute>
+            <Atribute>ReadOnly</Atribute>
+          </Atributes>
+          <Data>e.However, when I try to think of modularizing the Visual Studio Web Application into different Web Applications, the c</Data>
+          <Extension>Xml</Extension>
+        </AbstractDirectory>
+        <AbstractDirectory xsi:type="Image">
+          <Name>not</Name>
+          <Size>348152898</Size>
+          <Atributes>
+            <Atribute>ReadOnly</Atribute>
           </Atributes>
           <Resolution>
-            <Height>100</Height>
-            <Width>100</Width>
+            <Height>1404</Height>
+            <Width>1644</Width>
           </Resolution>
-          <Depth>255</Depth>
+          <Depth>1009</Depth>
           <Channels>3</Channels>
-          <Extension>Gif</Extension>
+          <Extension>Png</Extension>
         </AbstractDirectory>
-        <AbstractDirectory xsi:type="Document">
-          <Name>doc1</Name>
-          <Size>2222</Size>
-          <Atributes>
-            <Atribute>Hidden</Atribute>
-            <Atribute>System</Atribute>
-            <Atribute>Archive</Atribute>  
-          </Atributes>
-          <Data>.....data.....</Data>
-          <Extension>Docx</Extension>
+        <AbstractDirectory xsi:type="Directory">
+          <Name>RIGHT_RIGHT_DIR</Name>
+          <ChildrenList>
+            <AbstractDirectory xsi:type="Image">
+              <Name>option</Name>
+              <Size>723641904</Size>
+              <Atributes />
+              <Resolution>
+                <Height>628</Height>
+                <Width>369</Width>
+              </Resolution>
+              <Depth>128</Depth>
+              <Channels>1</Channels>
+              <Extension>Png</Extension>
+            </AbstractDirectory>
+            <AbstractDirectory xsi:type="Document">
+              <Name>files</Name>
+              <Size>828815617</Size>
+              <Atributes>
+                <Atribute>System</Atribute>
+                <Atribute>Archive</Atribute>
+                <Atribute>ReadOnly</Atribute>
+              </Atributes>
+              <Data> Studio Web Application developed at my office.However, when I try to think of modularizing the Visual Studio Web Application into different Web Applications</Data>
+              <Extension>Xlsx</Extension>
+            </AbstractDirectory>
+            <AbstractDirectory xsi:type="Image">
+              <Name>The</Name>
+              <Size>144723675</Size>
+              <Atributes>
+                <Atribute>Hidden</Atribute>
+                <Atribute>Archive</Atribute>
+                <Atribute>ReadOnly</Atribute>
+              </Atributes>
+              <Resolution>
+                <Height>331</Height>
+                <Width>177</Width>
+              </Resolution>
+              <Depth>5</Depth>
+              <Channels>4</Channels>
+              <Extension>Jpeg</Extension>
+            </AbstractDirectory>
+          </ChildrenList>
+        </AbstractDirectory>
+        <AbstractDirectory xsi:type="Directory">
+          <Name>RIGHT_LEFT_DIR</Name>
+          <ChildrenList>
+            <AbstractDirectory xsi:type="Document">
+              <Name>Windows</Name>
+              <Size>1545142184</Size>
+              <Atributes>
+                <Atribute>Hidden</Atribute>
+                <Atribute>Archive</Atribute>
+                <Atribute>ReadOnly</Atribute>
+              </Atributes>
+              <Data>different Web Applications, the circular dependency between components comes up which is Wrong.For example, I can't modularize the POCO project for each of the planned Web Application because there is too much depen</Data>
+              <Extension>Txt</Extension>
+            </AbstractDirectory>
+            <AbstractDirectory xsi:type="Document">
+              <Name>if</Name>
+              <Size>1568966315</Size>
+              <Atributes>
+                <Atribute>Archive</Atribute>
+              </Atributes>
+              <Data>etween components comes up which is Wrong.For example, I can't modularize the POCO project for each of the planned Web Application because there is too much dependency. Is there a way I could use Nug</Data>
+              <Extension>Xls</Extension>
+            </AbstractDirectory>
+            <AbstractDirectory xsi:type="Document">
+              <Name>Windows</Name>
+              <Size>1517972909</Size>
+              <Atributes>
+                <Atribute>Archive</Atribute>
+                <Atribute>ReadOnly</Atribute>
+              </Atributes>
+              <Data>, when I try to think of modularizing the Visual Studio Web Application into differen</Data>
+              <Extension>Txt</Extension>
+            </AbstractDirectory>
+            <AbstractDirectory xsi:type="Document">
+              <Name>won't</Name>
+              <Size>1267085692</Size>
+              <Atributes>
+                <Atribute>ReadOnly</Atribute>
+              </Atributes>
+              <Data>e circular dependency between components comes up which is Wrong.For example, I can't modularize the POCO project for each of the planned Web Application because there is too much dependency. Is there a way I could use Nuget to help with Modul</Data>
+              <Extension>Xls</Extension>
+            </AbstractDirectory>
+          </ChildrenList>
         </AbstractDirectory>
       </ChildrenList>
     </AbstractDirectory>
   </ChildrenList>
-</AbstractDirectory>
+</Directory>

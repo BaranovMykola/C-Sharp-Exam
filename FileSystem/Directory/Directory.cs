@@ -22,6 +22,11 @@ namespace FileSystem.Directory
             ChildrenList = childrenList.ToList();
         }
 
+        public Directory(string name)
+        {
+            Name = name;
+        }
+
         public Directory()
         {
             
@@ -30,6 +35,14 @@ namespace FileSystem.Directory
         public void Add(AbstractDirectory item)
         {
             ChildrenList.Add(item);
+        }
+
+        public void Add(IEnumerable<AbstractDirectory> seq)
+        {
+            foreach (var item in seq)
+            {
+                Add(item);
+            }
         }
 
         public override void accept(AbstractVisitor visitor)

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem", "FileSystem\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceProgram", "SourceProgram\SourceProgram.csproj", "{35DEC670-D349-4973-BCA1-4A51B78DFC1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rectangles", "Rectangles\Rectangles.csproj", "{8EA362A0-1CA3-4623-AD45-30A5CE341328}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{35DEC670-D349-4973-BCA1-4A51B78DFC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35DEC670-D349-4973-BCA1-4A51B78DFC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35DEC670-D349-4973-BCA1-4A51B78DFC1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA362A0-1CA3-4623-AD45-30A5CE341328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA362A0-1CA3-4623-AD45-30A5CE341328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA362A0-1CA3-4623-AD45-30A5CE341328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA362A0-1CA3-4623-AD45-30A5CE341328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
