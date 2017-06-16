@@ -4,12 +4,14 @@ using System.Linq;
 
 namespace Rectangles
 {
-    class RectangleTree
+    [Serializable]
+    public class RectangleTree
     {
         #region Fields & Properties
 
         public Rectangle ThisRectangle { get; set; }
         public List<RectangleTree> InnerRectangles { get; set; } = new List<RectangleTree>();
+        public event EventHandler<EventArgs> OnMaxInners;
 
         #endregion
 
@@ -17,10 +19,10 @@ namespace Rectangles
 
         public RectangleTree()
         {
-
+            OnMaxInners += RectangleTreeEventHendler.RemoveHierarchy;
         }
 
-        public RectangleTree(Rectangle thisRectangle)
+        public RectangleTree(Rectangle thisRectangle): this()
         {
             ThisRectangle = thisRectangle;
         }
@@ -34,7 +36,7 @@ namespace Rectangles
 
         public void InsertRectangle(Rectangle newRectangle)
         {
-            if (newRectangle.IsInner(ThisRectangle) && !ThisRectangle.IsSame(newRectangle))
+            if (ThisRectangle != null && newRectangle.IsInner(ThisRectangle) && !ThisRectangle.IsSame(newRectangle))
             {
                 var rec = ThisRectangle;
                 ThisRectangle = newRectangle;
@@ -42,14 +44,21 @@ namespace Rectangles
                 return;
             }
 
-            List<RectangleTree> outer = InnerRectangles.Where(rectangle => rectangle.ThisRectangle.IsInner(rectangle.ThisRectangle)).ToList();
+            List<RectangleTree> outer = new List<RectangleTree>();
+            foreach (var tree in InnerRectangles)
+            {
+                if (tree.ThisRectangle.IsInner(newRectangle))
+                {
+                    outer.Add(tree);
+                }
+            }
 
             if (outer.Count > 0)
             {
                 RectangleTree min = outer.First();
                 foreach (var tree in outer)
                 {
-                    if (min.ThisRectangle.Squre() < tree.ThisRectangle.Squre())
+                    if (min.ThisRectangle.Square() < tree.ThisRectangle.Square())
                     {
                         min = tree;
                     }
@@ -57,8 +66,11 @@ namespace Rectangles
                 min.InsertRectangle(newRectangle);
                 return;
             }
-
-            throw new NotImplementedException();
+            InnerRectangles.Add(new RectangleTree(newRectangle));
+            if (InnerRectangles.Count >= RectanglesProgram.n_max)
+            {
+                OnMaxInners?.Invoke(this, new RectangleArgs(InnerRectangles));
+            }
         }
 
         public void InsertRectangle(List<Rectangle> newRectangles)
@@ -71,7 +83,29 @@ namespace Rectangles
 
         public void Print()
         {
-            
+            if (ThisRectangle != null)
+            {
+                Console.Write($"{ThisRectangle}\t--->\t");
+            }
+            foreach (var rectangle in InnerRectangles)
+            {
+                rectangle.Print();
+                if(rectangle == InnerRectangles.Last()) continue;
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("***********************************");
+                Console.WriteLine();
+            }
+        }
+
+        public List<Rectangle> GetAllRectangles()
+        {
+            List<Rectangle> lst = new List<Rectangle> {ThisRectangle};
+            foreach (var rectangle in InnerRectangles)
+            {
+                lst.AddRange(rectangle.GetAllRectangles());
+            }
+            return lst;
         }
 
     }

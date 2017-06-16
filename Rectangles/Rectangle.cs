@@ -1,6 +1,9 @@
+using System;
+
 namespace Rectangles
 {
-    class Rectangle
+    [Serializable]
+    public class Rectangle
     {
         #region Fields & Properties
 
@@ -29,7 +32,7 @@ namespace Rectangles
 
         #endregion
 
-        public override string ToString() => $"Rectangle:\t{First} -> {Second}}}";
+        public override string ToString() => $"Rectangle:\t{First} -> {Second}";
 
         public bool IsInner(Rectangle otherRectangle)
         {
@@ -37,7 +40,7 @@ namespace Rectangles
                    otherRectangle.Second.X <= Second.X && otherRectangle.Second.Y >= Second.Y;
         }
 
-        public int Squre() => (Second.X - First.X)*(First.Y - Second.Y);
+        public int Square() => (Second.X - First.X)*(First.Y - Second.Y);
 
         public bool IsSame(Rectangle ohteRectangle) => ohteRectangle.First == First && ohteRectangle.Second == Second;
     }
