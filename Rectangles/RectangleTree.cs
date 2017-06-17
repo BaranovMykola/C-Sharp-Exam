@@ -34,6 +34,8 @@ namespace Rectangles
 
         #endregion
 
+        #region Methods
+
         public void InsertRectangle(Rectangle newRectangle)
         {
             if (ThisRectangle != null && newRectangle.IsInner(ThisRectangle) && !ThisRectangle.IsSame(newRectangle))
@@ -90,7 +92,7 @@ namespace Rectangles
             foreach (var rectangle in InnerRectangles)
             {
                 rectangle.Print();
-                if(rectangle == InnerRectangles.Last()) continue;
+                if (rectangle == InnerRectangles.Last()) continue;
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine("***********************************");
@@ -108,5 +110,6 @@ namespace Rectangles
             return lst;
         }
 
+        #endregion
     }
 }
