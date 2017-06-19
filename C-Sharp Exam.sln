@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rectangles", "Rectangles\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{3B61CD2A-EEF3-48C9-B4D4-6ECA45F463F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{A26D1AB5-9C82-4E71-AA95-56F547C222FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product", "Product\Product.csproj", "{82796335-C5B1-4385-A140-7243BE46A8F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{3B61CD2A-EEF3-48C9-B4D4-6ECA45F463F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B61CD2A-EEF3-48C9-B4D4-6ECA45F463F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B61CD2A-EEF3-48C9-B4D4-6ECA45F463F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26D1AB5-9C82-4E71-AA95-56F547C222FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26D1AB5-9C82-4E71-AA95-56F547C222FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26D1AB5-9C82-4E71-AA95-56F547C222FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26D1AB5-9C82-4E71-AA95-56F547C222FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82796335-C5B1-4385-A140-7243BE46A8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82796335-C5B1-4385-A140-7243BE46A8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82796335-C5B1-4385-A140-7243BE46A8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82796335-C5B1-4385-A140-7243BE46A8F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

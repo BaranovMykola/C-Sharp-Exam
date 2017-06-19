@@ -157,6 +157,8 @@ namespace SourceProgram
             leftleftDirectory.Add(GenerateRave(5));
             leftDirectory.Add(GenerateRave(1));
 
+            #region Connections
+
             leftleftDirectory.Add(leftDirectory);
 
             rightDirectory.Add(rightrightDirectory);
@@ -164,6 +166,9 @@ namespace SourceProgram
 
             root.Add(leftDirectory);
             root.Add(rightDirectory);
+
+            #endregion
+
 
             PrintVisitor print = new PrintVisitor();
             //print.visit(root);
