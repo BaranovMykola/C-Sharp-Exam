@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Product.Builder
-{
-    class Director
-    {
-        public void Build(IBuilder builder)
-        {
-            builder.BuildCorpus();
-            builder.BuildViscera();
-            builder.BuildDesign();
-        }
-    }
-}
+//namespace Product.Builder
+//{
+//    class Director
+//    {
+//        public void Build(IBuilder builder)
+//        {
+//            builder.BuildCorpus();
+//            builder.BuildViscera();
+//            builder.BuildDesign();
+//        }
+//    }
+//}
